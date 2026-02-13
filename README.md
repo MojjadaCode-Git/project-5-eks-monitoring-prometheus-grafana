@@ -9,6 +9,15 @@ This project demonstrates how to implement monitoring and observability for a Ku
 
 The monitoring stack collects metrics from cluster nodes, pods, and Kubernetes components and visualizes them through real-time dashboards.
 
+#############################################################
+
+## Known Limitation
+- Prometheus Alertmanager pod is in Pending state due to lack of persistent storage (PVC).
+- This does not impact Prometheus metric collection or Grafana dashboards.
+- For production, Alertmanager would be backed by EBS/EFS storage.
+
+################################################################
+
 🎯 Objectives
 
 Create an AWS EKS cluster with managed node groups
