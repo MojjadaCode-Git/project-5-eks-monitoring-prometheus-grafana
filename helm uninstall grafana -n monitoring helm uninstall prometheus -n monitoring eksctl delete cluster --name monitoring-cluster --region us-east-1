@@ -1,0 +1,3 @@
+helm uninstall grafana -n monitoring
+helm uninstall prometheus -n monitoring
+eksctl delete cluster --name monitoring-cluster --region us-east-1
